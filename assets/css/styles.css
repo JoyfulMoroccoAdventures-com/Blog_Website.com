@@ -474,7 +474,7 @@
 
 .about__img {
   width: 380px;
-  justify-self: center;
+  /* justify-self: center; */
 }
 
 .about__title {
@@ -2142,7 +2142,6 @@
 
 .about__img {
   width: 280px;
-  justify-self: center;
 }
 
 .about__title {
@@ -2197,6 +2196,19 @@
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
+  }
+
+    .about__img{
+      display: block;
+
+    }
+  
+}
+
+
+@media screen and (max-width: 767px) {
+  .about__img{
+    display: none;
   }
 }
 
