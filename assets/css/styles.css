@@ -805,7 +805,7 @@
   }
   
   .trip__image img {
-    max-width: 425px;
+    max-width: 880px;
     margin-inline: auto;
   }
   
@@ -2197,11 +2197,6 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
   }
-
-    .about__img{
-      display: block;
-
-    }
   
 }
 
@@ -2209,6 +2204,15 @@
 @media screen and (max-width: 767px) {
   .about__img{
     display: none;
+  }
+
+  .section__header{
+    display: block;
+  }
+
+  .trip__image img{
+    max-width: 420px;
+    position: relative;
   }
 }
 
