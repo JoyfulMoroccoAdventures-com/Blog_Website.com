@@ -60,7 +60,7 @@ button{
     background: rgba(86,86,86,0.3);
     backdrop-filter: blur(10px);
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 0;
 }
 
@@ -68,7 +68,7 @@ button{
     width: 550px;
     color: #fff;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -109,14 +109,14 @@ button{
 }
 
 #prev, #next{
-    width: 20px;
+    width: 10px;
     cursor: pointer;
 }
 
 .preview{
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .preview img{
@@ -138,12 +138,15 @@ button{
 /* Tablets and larger phones (portrait mode) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
-        width: 80%;
+        position: absolute;
+        left: 50%;
         height: 100vh;
+        width: 100%;
     }
     .info h1 {
-        font-size: 48px;
-        margin: 16px 0;
+        justify-content: center;
+        font-size: 38px;
+        margin: 10px 0;
     }
     .info p {
         font-size: 14px;
@@ -151,7 +154,7 @@ button{
     }
     .slider {
         align-items: center;
-        right: 25px;
+        right: 12px;
     }
 }
 
@@ -214,3 +217,55 @@ button{
         right: 10px;
     }
 }
+
+
+@media screen and (max-width: 640px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .info h1{
+        font-size: 32px;
+        margin: 6px 0;
+    }
+
+    .info p{
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .slider{
+    align-items: center;
+    right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .info h1{
+        font-size: 2.5rem;
+        margin: 4px 0;
+    }
+
+    .info p{
+        font-size: 4px;
+        line-height: 14px;
+    }
+
+    .slider{
+    align-items: center;
+    right: 10px;
+    }
+}
+
