@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -114,7 +116,7 @@ button{
 .preview{
     display: flex;
     align-items: center;
-    margin: 0 60px;
+    margin: 0 20px;
 }
 
 .preview img{
@@ -128,4 +130,87 @@ button{
     border: 3px solid #fff;
     width: 100px;
     opacity: 1;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+
+/* Tablets and larger phones (portrait mode) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        height: 100vh;
+    }
+    .info h1 {
+        font-size: 48px;
+        margin: 16px 0;
+    }
+    .info p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .slider {
+        align-items: center;
+        right: 25px;
+    }
+}
+
+/* Small tablets and large phones (landscape mode) */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .container {
+        width: 90%;
+        height: 100vh;
+    }
+    .info h1 {
+        font-size: 42px;
+        margin: 12px 0;
+    }
+    .info p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .slider {
+        align-items: center;
+        right: 20px;
+    }
+}
+
+/* Small phones (portrait mode) */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+    .info h1 {
+        font-size: 36px;
+        margin: 8px 0;
+    }
+    .info p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .slider {
+        align-items: center;
+        right: 15px;
+    }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 479px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+    .info h1 {
+        font-size: 32px;
+        margin: 6px 0;
+    }
+    .info p {
+        font-size: 9px;
+        line-height: 14px;
+    }
+    .slider {
+        align-items: center;
+        right: 10px;
+    }
 }
